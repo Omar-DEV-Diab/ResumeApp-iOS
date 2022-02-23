@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07080E3527C6C5DB004968B1 /* WorkSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */; };
+		07080E3727C6C72F004968B1 /* educationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */; };
+		07080E3927C6C780004968B1 /* projectsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */; };
 		077AA8DC27C541630028A050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DB27C541630028A050 /* AppDelegate.swift */; };
 		077AA8DE27C541630028A050 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DD27C541630028A050 /* SceneDelegate.swift */; };
 		077AA8E027C541630028A050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DF27C541630028A050 /* ViewController.swift */; };
@@ -16,9 +19,13 @@
 		077AA8EB27C541660028A050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077AA8E927C541660028A050 /* LaunchScreen.storyboard */; };
 		077AA8F527C555FD0028A050 /* resumeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8F427C555FD0028A050 /* resumeTableViewCell.swift */; };
 		077AA8F727C55E980028A050 /* resumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8F627C55E980028A050 /* resumeViewController.swift */; };
+		077AA8F927C569A80028A050 /* resumeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8F827C569A80028A050 /* resumeObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSummaryViewController.swift; sourceTree = "<group>"; };
+		07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationDetailsViewController.swift; sourceTree = "<group>"; };
+		07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectsDetailsViewController.swift; sourceTree = "<group>"; };
 		077AA8D827C541630028A050 /* ResumeApp-iOS-AnyMind-Group.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ResumeApp-iOS-AnyMind-Group.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		077AA8DB27C541630028A050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		077AA8DD27C541630028A050 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +37,7 @@
 		077AA8EC27C541660028A050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		077AA8F427C555FD0028A050 /* resumeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resumeTableViewCell.swift; sourceTree = "<group>"; };
 		077AA8F627C55E980028A050 /* resumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resumeViewController.swift; sourceTree = "<group>"; };
+		077AA8F827C569A80028A050 /* resumeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resumeObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 				077AA8E927C541660028A050 /* LaunchScreen.storyboard */,
 				077AA8EC27C541660028A050 /* Info.plist */,
 				077AA8E427C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodeld */,
+				077AA8F827C569A80028A050 /* resumeObject.swift */,
+				07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */,
+				07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */,
+				07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */,
 			);
 			path = "ResumeApp-iOS-AnyMind-Group";
 			sourceTree = "<group>";
@@ -147,10 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07080E3727C6C72F004968B1 /* educationDetailsViewController.swift in Sources */,
 				077AA8E027C541630028A050 /* ViewController.swift in Sources */,
 				077AA8DC27C541630028A050 /* AppDelegate.swift in Sources */,
+				07080E3527C6C5DB004968B1 /* WorkSummaryViewController.swift in Sources */,
 				077AA8DE27C541630028A050 /* SceneDelegate.swift in Sources */,
+				077AA8F927C569A80028A050 /* resumeObject.swift in Sources */,
 				077AA8E627C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodeld in Sources */,
+				07080E3927C6C780004968B1 /* projectsDetailsViewController.swift in Sources */,
 				077AA8F527C555FD0028A050 /* resumeTableViewCell.swift in Sources */,
 				077AA8F727C55E980028A050 /* resumeViewController.swift in Sources */,
 			);
