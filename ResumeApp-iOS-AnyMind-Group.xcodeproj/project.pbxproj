@@ -10,6 +10,10 @@
 		07080E3527C6C5DB004968B1 /* WorkSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */; };
 		07080E3727C6C72F004968B1 /* educationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */; };
 		07080E3927C6C780004968B1 /* projectsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */; };
+		07080E3B27C8048E004968B1 /* baseDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3A27C8048E004968B1 /* baseDetailsObject.swift */; };
+		07080E3D27C804B6004968B1 /* workDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3C27C804B6004968B1 /* workDetailsObject.swift */; };
+		07080E3F27C804DF004968B1 /* educationDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3E27C804DF004968B1 /* educationDetailsObject.swift */; };
+		07080E4127C8050E004968B1 /* projectDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E4027C8050E004968B1 /* projectDetailsObject.swift */; };
 		077AA8DC27C541630028A050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DB27C541630028A050 /* AppDelegate.swift */; };
 		077AA8DE27C541630028A050 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DD27C541630028A050 /* SceneDelegate.swift */; };
 		077AA8E027C541630028A050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DF27C541630028A050 /* ViewController.swift */; };
@@ -26,6 +30,10 @@
 		07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSummaryViewController.swift; sourceTree = "<group>"; };
 		07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationDetailsViewController.swift; sourceTree = "<group>"; };
 		07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectsDetailsViewController.swift; sourceTree = "<group>"; };
+		07080E3A27C8048E004968B1 /* baseDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseDetailsObject.swift; sourceTree = "<group>"; };
+		07080E3C27C804B6004968B1 /* workDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workDetailsObject.swift; sourceTree = "<group>"; };
+		07080E3E27C804DF004968B1 /* educationDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationDetailsObject.swift; sourceTree = "<group>"; };
+		07080E4027C8050E004968B1 /* projectDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectDetailsObject.swift; sourceTree = "<group>"; };
 		077AA8D827C541630028A050 /* ResumeApp-iOS-AnyMind-Group.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ResumeApp-iOS-AnyMind-Group.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		077AA8DB27C541630028A050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		077AA8DD27C541630028A050 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 				07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */,
 				07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */,
 				07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */,
+				07080E3A27C8048E004968B1 /* baseDetailsObject.swift */,
+				07080E3C27C804B6004968B1 /* workDetailsObject.swift */,
+				07080E3E27C804DF004968B1 /* educationDetailsObject.swift */,
+				07080E4027C8050E004968B1 /* projectDetailsObject.swift */,
 			);
 			path = "ResumeApp-iOS-AnyMind-Group";
 			sourceTree = "<group>";
@@ -164,10 +176,14 @@
 				077AA8DC27C541630028A050 /* AppDelegate.swift in Sources */,
 				07080E3527C6C5DB004968B1 /* WorkSummaryViewController.swift in Sources */,
 				077AA8DE27C541630028A050 /* SceneDelegate.swift in Sources */,
+				07080E3F27C804DF004968B1 /* educationDetailsObject.swift in Sources */,
+				07080E3B27C8048E004968B1 /* baseDetailsObject.swift in Sources */,
 				077AA8F927C569A80028A050 /* resumeObject.swift in Sources */,
 				077AA8E627C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodeld in Sources */,
 				07080E3927C6C780004968B1 /* projectsDetailsViewController.swift in Sources */,
 				077AA8F527C555FD0028A050 /* resumeTableViewCell.swift in Sources */,
+				07080E4127C8050E004968B1 /* projectDetailsObject.swift in Sources */,
+				07080E3D27C804B6004968B1 /* workDetailsObject.swift in Sources */,
 				077AA8F727C55E980028A050 /* resumeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

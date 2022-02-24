@@ -9,6 +9,12 @@ import UIKit
 
 class WorkSummaryViewController: UIViewController {
 
+    var delegate: dataSentDelegate?
+    var workObject: workDetailsObject?
+    
+    @IBOutlet weak var companyNameTextField: UITextField!
+    @IBOutlet weak var durationTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,20 +22,11 @@ class WorkSummaryViewController: UIViewController {
     }
     
     @IBAction func saveWork(_ sender: Any) {
-        print("--------")
+        delegate?.getData(self, data: workObject!)
     }
     
     @IBAction func Cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -9,6 +9,15 @@ import UIKit
 
 class projectsDetailsViewController: UIViewController {
 
+    var delegate: dataSentDelegate?
+    var projectObject: projectDetailsObject?
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var sizeTextField: UITextField!
+    @IBOutlet weak var summaryTextField: UITextField!
+    @IBOutlet weak var techTextField: UITextField!
+    @IBOutlet weak var roleTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,19 +25,10 @@ class projectsDetailsViewController: UIViewController {
     }
     
     @IBAction func saveProject(_ sender: Any) {
+        delegate?.getData(self, data: projectObject!)
     }
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

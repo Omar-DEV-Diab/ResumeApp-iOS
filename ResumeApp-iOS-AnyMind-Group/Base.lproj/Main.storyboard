@@ -128,7 +128,7 @@
                                                         <rect key="frame" x="159" y="15" width="235" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" textContentType="tel"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vS-l0-Nsn">
                                                         <rect key="frame" x="14" y="22" width="119" height="21"/>
@@ -148,7 +148,7 @@
                                                         <rect key="frame" x="159" y="15" width="235" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvG-0k-jb5">
                                                         <rect key="frame" x="16" y="22" width="108" height="21"/>
@@ -177,7 +177,7 @@
                                                         <rect key="frame" x="159" y="15" width="235" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="address-level1+2"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="address-level1+2"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Residance Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYj-Po-gmv">
                                                         <rect key="frame" x="16" y="22" width="119" height="21"/>
@@ -218,7 +218,7 @@
                                                         <rect key="frame" x="159" y="15" width="235" height="34"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Years of experience" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zZ-7f-oky">
                                                         <rect key="frame" x="15" y="0.0" width="125" height="57"/>
@@ -249,8 +249,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="onBtn_Create:" destination="C9p-co-Fi9" eventType="touchUpInside" id="Jc2-36-wPO"/>
-                                                            <segue destination="1jN-vL-lHH" kind="show" id="ffz-PF-HUS"/>
+                                                            <segue destination="1jN-vL-lHH" kind="show" identifier="addNewWork" id="ffz-PF-HUS"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Uq-pN-GWM">
@@ -295,7 +294,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPG-H0-ZCr">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPG-H0-ZCr">
                                                         <rect key="frame" x="161" y="14" width="234" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -307,7 +306,7 @@
                                                                 </attributes>
                                                             </fragment>
                                                         </attributedString>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                                     </textView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -324,7 +323,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="e8D-Tb-u50" kind="show" id="5Uf-ts-wI6"/>
+                                                            <segue destination="e8D-Tb-u50" kind="show" identifier="addNewEducation" id="5Uf-ts-wI6"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Education Details " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW2-V5-goA">
@@ -377,7 +376,7 @@
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="u8Q-HE-4DA" kind="show" id="8DG-HG-dIY"/>
+                                                            <segue destination="u8Q-HE-4DA" kind="show" identifier="addNewProject" id="8DG-HG-dIY"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34T-I2-ZZg">
@@ -485,7 +484,16 @@
                     <navigationItem key="navigationItem" id="b4d-hE-zP8"/>
                     <size key="freeformSize" width="414" height="1350"/>
                     <connections>
+                        <outlet property="areaTextField" destination="LOB-vW-9t8" id="NU0-v2-DSq"/>
+                        <outlet property="careerObjectiveTextView" destination="ANQ-Ci-A5N" id="xs2-S0-j1E"/>
+                        <outlet property="educationStack" destination="0G4-6G-nOL" id="JGV-TV-2AK"/>
+                        <outlet property="emailTextField" destination="dFu-0S-3U6" id="tpn-mc-wcl"/>
+                        <outlet property="mobileTextField" destination="Kt8-Ih-5pf" id="Hoi-5D-t7z"/>
+                        <outlet property="photo" destination="bqu-WS-kEm" id="6D6-Ns-vWp"/>
+                        <outlet property="projectStack" destination="5q9-I2-6Pv" id="vwU-bT-Gxk"/>
+                        <outlet property="skilsTextView" destination="pPG-H0-ZCr" id="S9k-TO-e4Q"/>
                         <outlet property="workStack" destination="ilr-NN-VTA" id="Omg-j0-U7X"/>
+                        <outlet property="yearsOfExperienceTextField" destination="0dN-DE-d1J" id="z1C-jh-WWY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQp-K6-Fok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -515,13 +523,13 @@
                                         <rect key="frame" x="145" y="24" width="206" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="organization"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ALi-vi-kV3">
                                         <rect key="frame" x="145" y="77" width="206" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5G-6y-sQi">
                                         <rect key="frame" x="266" y="133" width="85" height="31"/>
@@ -556,6 +564,10 @@
                         <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="tpH-qf-JJk"/>
+                    <connections>
+                        <outlet property="companyNameTextField" destination="XjV-c9-uee" id="Kjb-5n-9E6"/>
+                        <outlet property="durationTextField" destination="ALi-vi-kV3" id="Nis-VU-osw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bnq-0A-hlx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -584,19 +596,19 @@
                                         <rect key="frame" x="153" y="24" width="198" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QFv-vR-1bG">
                                         <rect key="frame" x="153" y="77" width="198" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" textContentType="date-time"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done" textContentType="date-time"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IiQ-Al-Iiq">
                                         <rect key="frame" x="153" y="132" width="198" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alv-Ia-o0A">
                                         <rect key="frame" x="266" y="191" width="85" height="31"/>
@@ -638,6 +650,11 @@
                         <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="sSi-b1-tiy"/>
+                    <connections>
+                        <outlet property="GPATextField" destination="Jlw-30-nay" id="ieL-ao-cNS"/>
+                        <outlet property="classTextField" destination="35D-A5-uxb" id="JAB-m2-Cwg"/>
+                        <outlet property="yearTextField" destination="QFv-vR-1bG" id="DrW-lg-ZdG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGR-Zq-yuV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -646,7 +663,7 @@
         <!--Projects Details View Controller-->
         <scene sceneID="TsX-2O-Pxw">
             <objects>
-                <viewController id="u8Q-HE-4DA" customClass="projectsDetailsViewController" customModule="ResumeApp_iOS_AnyMind_Group" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addProject" id="u8Q-HE-4DA" customClass="projectsDetailsViewController" customModule="ResumeApp_iOS_AnyMind_Group" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ps-mG-DAd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -655,8 +672,8 @@
                                 <rect key="frame" x="20" y="93" width="374" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g67-dQ-CBD">
-                                        <rect key="frame" x="8" y="31" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g67-dQ-CBD">
+                                        <rect key="frame" x="8" y="31" width="103" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -666,19 +683,19 @@
                                         <rect key="frame" x="153" y="24" width="198" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NP4-oa-mV4">
                                         <rect key="frame" x="153" y="77" width="198" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" textContentType="date-time"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CSu-Eg-ZYC">
                                         <rect key="frame" x="153" y="132" width="198" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsn-eX-Y2R">
                                         <rect key="frame" x="266" y="298" width="85" height="31"/>
@@ -689,15 +706,15 @@
                                             <action selector="cancel:" destination="u8Q-HE-4DA" eventType="touchUpInside" id="L79-p1-V25"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Passing Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXP-Fh-MpG">
-                                        <rect key="frame" x="8" y="84" width="97" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXP-Fh-MpG">
+                                        <rect key="frame" x="8" y="84" width="78" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Percentage/CGPA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efc-MD-hcr">
-                                        <rect key="frame" x="8" y="139" width="137" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efc-MD-hcr">
+                                        <rect key="frame" x="8" y="139" width="131" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -707,10 +724,10 @@
                                         <rect key="frame" x="153" y="187" width="198" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Percentage/CGPA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2g-FI-KwM">
-                                        <rect key="frame" x="8" y="194" width="137" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Technology used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2g-FI-KwM">
+                                        <rect key="frame" x="8" y="194" width="130" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -720,10 +737,10 @@
                                         <rect key="frame" x="153" y="238" width="198" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Percentage/CGPA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac5-Nh-fbK">
-                                        <rect key="frame" x="8" y="245" width="137" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac5-Nh-fbK">
+                                        <rect key="frame" x="8" y="245" width="34" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -746,6 +763,13 @@
                         <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="J16-xB-Zx0"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="K7j-dC-8Zd" id="WFq-oo-HHO"/>
+                        <outlet property="roleTextField" destination="M3s-gb-hab" id="JSS-BR-oUX"/>
+                        <outlet property="sizeTextField" destination="NP4-oa-mV4" id="JNl-qt-acT"/>
+                        <outlet property="summaryTextField" destination="CSu-Eg-ZYC" id="Mej-ky-fCX"/>
+                        <outlet property="techTextField" destination="jHH-4u-hRB" id="3ym-8N-ocD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIw-a3-8i5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

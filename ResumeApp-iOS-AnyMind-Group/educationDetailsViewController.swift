@@ -9,6 +9,13 @@ import UIKit
 
 class educationDetailsViewController: UIViewController {
 
+    var delegate: dataSentDelegate?
+    var eduObject: educationDetailsObject?
+    
+    @IBOutlet weak var classTextField: UITextField!
+    @IBOutlet weak var yearTextField: UITextField!
+    @IBOutlet weak var GPATextField: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,19 +23,11 @@ class educationDetailsViewController: UIViewController {
     }
     
     @IBAction func saveEducation(_ sender: Any) {
+        delegate?.getData(self, data: eduObject!)
     }
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
