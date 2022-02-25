@@ -30,4 +30,15 @@ class resumeObject: NSObject, Codable {
         self.projects = [projectDetailsObject]()
     }
     
+    func getSkilsString() -> String {
+        if skils!.count > 0 {
+            let stringRepresentation = skils?.joined(separator: ",")
+            return stringRepresentation!
+        }
+        return ""
+    }
+    
+    func getImage() -> UIImage {
+        return UIImage(data: image!)!
+    }
 }
