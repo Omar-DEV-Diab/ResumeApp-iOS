@@ -7,24 +7,35 @@
 
 import UIKit
 
+protocol cellDelegate {
+    func onEditTouched(_ resume: resumeObject)
+    func onShareTouched()// maybe removed
+}
+
 class resumeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var editBtn: UIButton!
     @IBOutlet weak var shareBtn: UIButton!
+    
+    var savedResume: resumeObject?
+    var delegate: cellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-//    func populateCell(objct:) {
-//        
-//    }
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func populateCell(_ resume: resumeObject) {
+        savedResume = resume
+        nameLabel.text = savedResume?.ID
     }
-
+    
+    @IBAction func onClickEdit(_ sender: UIButton) {
+        delegate?.onEditTouched(savedResume!)
+    }
+    
+    @IBAction func onClickShare(_ sender: UIButton) {
+        delegate?.onShareTouched()//
+        // call service better
+    }
 }
