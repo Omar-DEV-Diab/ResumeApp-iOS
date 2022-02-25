@@ -24,11 +24,56 @@ class projectsDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        projectObject = projectDetailsObject()
+    }
+    
     @IBAction func saveProject(_ sender: Any) {
+        guard validateFields() else {
+            return
+        }
+        projectObject?.name = nameTextField.text
+        projectObject?.teamSize = Int(sizeTextField.text!)
+        projectObject?.summary = summaryTextField.text
+        projectObject?.tech = techTextField.text
+        projectObject?.role = roleTextField.text
         delegate?.getData(self, data: projectObject!)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    private func validateFields() -> Bool {
+        if ((nameTextField.text?.isEmpty) == nil) {
+            showAlert("Project name is empty")
+            return false
+        }
+        if ((sizeTextField.text?.isEmpty) == nil) {
+            showAlert("Team size is empty")
+            return false
+        }
+        if ((summaryTextField.text?.isEmpty) == nil) {
+            showAlert("Summary field is empty")
+            return false
+        }
+        if ((techTextField.text?.isEmpty) == nil) {
+            showAlert("Tech used is empty")
+            return false
+        }
+        if ((roleTextField.text?.isEmpty) == nil) {
+            showAlert("Role is empty")
+            return false
+        }
+        return true
     }
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    private func showAlert(_ text:String) {
+        let alert = UIAlertController(title: "Error", message: text, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
