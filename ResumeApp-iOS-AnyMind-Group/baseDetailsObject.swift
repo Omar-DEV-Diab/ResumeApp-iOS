@@ -7,7 +7,6 @@
 
 import Foundation
 
-class baseDetailsObject {
+class baseDetailsObject: Codable {
     var name:String?
-    
 }
