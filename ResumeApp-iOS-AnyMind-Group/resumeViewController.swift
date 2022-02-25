@@ -79,7 +79,7 @@ class resumeViewController: UIViewController, dataSentDelegate {
     func createLabelForStack(_ title: String, _ stack:UIStackView) {
         let label = UILabel()
         label.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
-        label.backgroundColor = UIColor.blue
+        label.backgroundColor = UIColor.systemTeal
         label.text = title
         label.textColor = UIColor.white
         stack.addArrangedSubview(label)

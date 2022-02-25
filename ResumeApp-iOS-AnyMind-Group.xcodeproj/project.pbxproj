@@ -14,6 +14,7 @@
 		07080E3D27C804B6004968B1 /* workDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3C27C804B6004968B1 /* workDetailsObject.swift */; };
 		07080E3F27C804DF004968B1 /* educationDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3E27C804DF004968B1 /* educationDetailsObject.swift */; };
 		07080E4127C8050E004968B1 /* projectDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E4027C8050E004968B1 /* projectDetailsObject.swift */; };
+		07080E4327C8D24C004968B1 /* resumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E4227C8D24C004968B1 /* resumeService.swift */; };
 		077AA8DC27C541630028A050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DB27C541630028A050 /* AppDelegate.swift */; };
 		077AA8DE27C541630028A050 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DD27C541630028A050 /* SceneDelegate.swift */; };
 		077AA8E027C541630028A050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DF27C541630028A050 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 		07080E3C27C804B6004968B1 /* workDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workDetailsObject.swift; sourceTree = "<group>"; };
 		07080E3E27C804DF004968B1 /* educationDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationDetailsObject.swift; sourceTree = "<group>"; };
 		07080E4027C8050E004968B1 /* projectDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectDetailsObject.swift; sourceTree = "<group>"; };
+		07080E4227C8D24C004968B1 /* resumeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resumeService.swift; sourceTree = "<group>"; };
 		077AA8D827C541630028A050 /* ResumeApp-iOS-AnyMind-Group.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ResumeApp-iOS-AnyMind-Group.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		077AA8DB27C541630028A050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		077AA8DD27C541630028A050 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				07080E3C27C804B6004968B1 /* workDetailsObject.swift */,
 				07080E3E27C804DF004968B1 /* educationDetailsObject.swift */,
 				07080E4027C8050E004968B1 /* projectDetailsObject.swift */,
+				07080E4227C8D24C004968B1 /* resumeService.swift */,
 			);
 			path = "ResumeApp-iOS-AnyMind-Group";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				07080E3727C6C72F004968B1 /* educationDetailsViewController.swift in Sources */,
 				077AA8E027C541630028A050 /* ViewController.swift in Sources */,
+				07080E4327C8D24C004968B1 /* resumeService.swift in Sources */,
 				077AA8DC27C541630028A050 /* AppDelegate.swift in Sources */,
 				07080E3527C6C5DB004968B1 /* WorkSummaryViewController.swift in Sources */,
 				077AA8DE27C541630028A050 /* SceneDelegate.swift in Sources */,
