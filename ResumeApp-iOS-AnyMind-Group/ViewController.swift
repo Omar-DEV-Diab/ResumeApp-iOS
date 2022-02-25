@@ -7,7 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+protocol resumeDelgate {
+    func newResumeAdded()
+}
+
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, cellDelegate, resumeDelgate {
     
     @IBOutlet weak var createBtn: UIButton!
     @IBOutlet weak var resumeTableView: UITableView!
@@ -36,13 +40,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.populateCell(resumes[indexPath.row])
         return cell
     }
+    
+    public func newResumeAdded() {
+        resumeService.resumeSingelton.loadResumes()
+        resumes = resumeService.resumeSingelton.resumesArray
+        resumeTableView.reloadData()
+    }
+    
+    func onEditTouched(_ resume: resumeObject) {
+        let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "resumeView") as! resumeViewController
+        detailVC.operation = .EDIT
+        detailVC.resume = resume
+        detailVC.delegate = self
+        self.present(detailVC, animated: true, completion: nil)
+    }
+    
+    func onShareTouched() {
+        // later
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "resumeView") {
-           
-           
+        if (segue.identifier == "create") {
             let detailVC = segue.destination as! resumeViewController
             detailVC.operation = .CREATE
-           
+            detailVC.delegate = self
         }
     }
 }
