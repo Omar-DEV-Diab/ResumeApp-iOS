@@ -25,7 +25,7 @@ class WorkSummaryViewController: UIViewController {
             return
         }
         workObject?.name = companyNameTextField.text!
-        workObject?.duration = durationTextField.text!
+        workObject?.duration = Float(durationTextField.text!)
         delegate?.getData(self, data: workObject!)
         dismiss(animated: true, completion: nil)
     }

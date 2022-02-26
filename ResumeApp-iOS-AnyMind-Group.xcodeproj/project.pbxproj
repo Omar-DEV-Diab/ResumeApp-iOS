@@ -61,6 +61,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07080E4427CA0C5A004968B1 /* DetailsObjects */ = {
+			isa = PBXGroup;
+			children = (
+				07080E3A27C8048E004968B1 /* baseDetailsObject.swift */,
+				07080E3C27C804B6004968B1 /* workDetailsObject.swift */,
+				07080E3E27C804DF004968B1 /* educationDetailsObject.swift */,
+				07080E4027C8050E004968B1 /* projectDetailsObject.swift */,
+			);
+			path = DetailsObjects;
+			sourceTree = "<group>";
+		};
+		07080E4527CA0C78004968B1 /* Details View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */,
+				07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */,
+				07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */,
+			);
+			path = "Details View controllers";
+			sourceTree = "<group>";
+		};
+		07080E4627CA0CB0004968B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				077AA8DF27C541630028A050 /* ViewController.swift */,
+				077AA8F427C555FD0028A050 /* resumeTableViewCell.swift */,
+				077AA8F627C55E980028A050 /* resumeViewController.swift */,
+				07080E4527CA0C78004968B1 /* Details View controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07080E4727CA0CBC004968B1 /* Objetcs */ = {
+			isa = PBXGroup;
+			children = (
+				077AA8F827C569A80028A050 /* resumeObject.swift */,
+				07080E4427CA0C5A004968B1 /* DetailsObjects */,
+			);
+			path = Objetcs;
+			sourceTree = "<group>";
+		};
+		07080E4827CA0CC7004968B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				07080E4227C8D24C004968B1 /* resumeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		077AA8CF27C541630028A050 = {
 			isa = PBXGroup;
 			children = (
@@ -82,23 +131,14 @@
 			children = (
 				077AA8DB27C541630028A050 /* AppDelegate.swift */,
 				077AA8DD27C541630028A050 /* SceneDelegate.swift */,
-				077AA8DF27C541630028A050 /* ViewController.swift */,
-				077AA8F427C555FD0028A050 /* resumeTableViewCell.swift */,
-				077AA8F627C55E980028A050 /* resumeViewController.swift */,
+				07080E4627CA0CB0004968B1 /* Views */,
 				077AA8E127C541640028A050 /* Main.storyboard */,
 				077AA8E727C541660028A050 /* Assets.xcassets */,
 				077AA8E927C541660028A050 /* LaunchScreen.storyboard */,
 				077AA8EC27C541660028A050 /* Info.plist */,
 				077AA8E427C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodeld */,
-				077AA8F827C569A80028A050 /* resumeObject.swift */,
-				07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */,
-				07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */,
-				07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */,
-				07080E3A27C8048E004968B1 /* baseDetailsObject.swift */,
-				07080E3C27C804B6004968B1 /* workDetailsObject.swift */,
-				07080E3E27C804DF004968B1 /* educationDetailsObject.swift */,
-				07080E4027C8050E004968B1 /* projectDetailsObject.swift */,
-				07080E4227C8D24C004968B1 /* resumeService.swift */,
+				07080E4727CA0CBC004968B1 /* Objetcs */,
+				07080E4827CA0CC7004968B1 /* Services */,
 			);
 			path = "ResumeApp-iOS-AnyMind-Group";
 			sourceTree = "<group>";

@@ -8,5 +8,5 @@
 import Foundation
 
 class workDetailsObject: baseDetailsObject {
-    var duration:Int?
+    var duration:Float?
 }
