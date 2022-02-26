@@ -130,12 +130,12 @@
 				077AA8DB27C541630028A050 /* AppDelegate.swift */,
 				077AA8DD27C541630028A050 /* SceneDelegate.swift */,
 				07080E4627CA0CB0004968B1 /* Views */,
+				07080E4727CA0CBC004968B1 /* Objetcs */,
+				07080E4827CA0CC7004968B1 /* Services */,
 				077AA8E127C541640028A050 /* Main.storyboard */,
 				077AA8E727C541660028A050 /* Assets.xcassets */,
 				077AA8E927C541660028A050 /* LaunchScreen.storyboard */,
 				077AA8EC27C541660028A050 /* Info.plist */,
-				07080E4727CA0CBC004968B1 /* Objetcs */,
-				07080E4827CA0CC7004968B1 /* Services */,
 			);
 			path = "ResumeApp-iOS-AnyMind-Group";
 			sourceTree = "<group>";
