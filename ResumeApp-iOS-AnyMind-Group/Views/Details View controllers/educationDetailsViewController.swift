@@ -33,7 +33,7 @@ class educationDetailsViewController: UIViewController {
         }
         eduObject?.name = classTextField.text
         eduObject?.year = yearTextField.text
-        eduObject?.GBA = Float(GPATextField.text!)
+        eduObject?.GPA = Float(GPATextField.text!)
         delegate?.getData(self, data: eduObject!)
         dismiss(animated: true, completion: nil)
     }

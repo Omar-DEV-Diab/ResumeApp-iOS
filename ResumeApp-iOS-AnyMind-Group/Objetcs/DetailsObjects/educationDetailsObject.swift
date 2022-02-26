@@ -9,5 +9,5 @@ import Foundation
 
 class educationDetailsObject: baseDetailsObject {
     var year:String?
-    var GBA:Float?
+    var GPA:Float?
 }

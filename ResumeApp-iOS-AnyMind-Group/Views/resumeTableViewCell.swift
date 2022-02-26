@@ -35,7 +35,23 @@ class resumeTableViewCell: UITableViewCell {
     }
     
     @IBAction func onClickShare(_ sender: UIButton) {
-        delegate?.onShareTouched()//
-        // call service better
+        
+        let pdfResumePath = shareToPdfService.shareSingelton.shareResumeAsPdf(savedResume!)
+        if FileManager.default.fileExists(atPath: pdfResumePath){
+            
+            let url = URL(fileURLWithPath: pdfResumePath)
+            let activityViewController: UIActivityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self
+            if let rootController = UIApplication.shared.keyWindow?.rootViewController {
+                var currentController: UIViewController! = rootController
+                while( currentController.presentedViewController != nil ) {
+                    currentController = currentController.presentedViewController
+                }
+                currentController.present(activityViewController, animated: true, completion: nil)
+            }
+        }
+        else {
+            print("resume was not found")
+        }
     }
 }
