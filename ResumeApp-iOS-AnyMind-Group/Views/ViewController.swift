@@ -55,10 +55,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.present(detailVC, animated: true, completion: nil)
     }
     
-    func onShareTouched() {
-        // later
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "create") {
             let detailVC = segue.destination as! resumeViewController

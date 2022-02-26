@@ -9,7 +9,6 @@ import UIKit
 
 protocol cellDelegate {
     func onEditTouched(_ resume: resumeObject)
-    func onShareTouched()// maybe removed
 }
 
 class resumeTableViewCell: UITableViewCell {
@@ -19,11 +18,6 @@ class resumeTableViewCell: UITableViewCell {
     
     var savedResume: resumeObject?
     var delegate: cellDelegate?
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
     func populateCell(_ resume: resumeObject) {
         savedResume = resume
