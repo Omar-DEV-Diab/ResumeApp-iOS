@@ -19,7 +19,6 @@
 		077AA8DE27C541630028A050 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DD27C541630028A050 /* SceneDelegate.swift */; };
 		077AA8E027C541630028A050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DF27C541630028A050 /* ViewController.swift */; };
 		077AA8E327C541640028A050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077AA8E127C541640028A050 /* Main.storyboard */; };
-		077AA8E627C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8E427C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodeld */; };
 		077AA8E827C541660028A050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077AA8E727C541660028A050 /* Assets.xcassets */; };
 		077AA8EB27C541660028A050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077AA8E927C541660028A050 /* LaunchScreen.storyboard */; };
 		077AA8F527C555FD0028A050 /* resumeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8F427C555FD0028A050 /* resumeTableViewCell.swift */; };
@@ -41,7 +40,6 @@
 		077AA8DD27C541630028A050 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		077AA8DF27C541630028A050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		077AA8E227C541640028A050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		077AA8E527C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResumeApp_iOS_AnyMind_Group.xcdatamodel; sourceTree = "<group>"; };
 		077AA8E727C541660028A050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		077AA8EA27C541660028A050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		077AA8EC27C541660028A050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				077AA8E727C541660028A050 /* Assets.xcassets */,
 				077AA8E927C541660028A050 /* LaunchScreen.storyboard */,
 				077AA8EC27C541660028A050 /* Info.plist */,
-				077AA8E427C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodeld */,
 				07080E4727CA0CBC004968B1 /* Objetcs */,
 				07080E4827CA0CC7004968B1 /* Services */,
 			);
@@ -223,7 +220,6 @@
 				07080E3F27C804DF004968B1 /* educationDetailsObject.swift in Sources */,
 				07080E3B27C8048E004968B1 /* baseDetailsObject.swift in Sources */,
 				077AA8F927C569A80028A050 /* resumeObject.swift in Sources */,
-				077AA8E627C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodeld in Sources */,
 				07080E3927C6C780004968B1 /* projectsDetailsViewController.swift in Sources */,
 				077AA8F527C555FD0028A050 /* resumeTableViewCell.swift in Sources */,
 				07080E4127C8050E004968B1 /* projectDetailsObject.swift in Sources */,
@@ -448,19 +444,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		077AA8E427C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				077AA8E527C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodel */,
-			);
-			currentVersion = 077AA8E527C541640028A050 /* ResumeApp_iOS_AnyMind_Group.xcdatamodel */;
-			path = ResumeApp_iOS_AnyMind_Group.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 077AA8D027C541630028A050 /* Project object */;
 }

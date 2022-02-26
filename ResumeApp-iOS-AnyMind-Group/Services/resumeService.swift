@@ -25,7 +25,7 @@ class resumeService {
                 let decoder = JSONDecoder()
                 resumesArray = try decoder.decode([resumeObject].self, from: data)
             } catch {
-                print("Unable to Decode Notes (\(error))")
+                print("Unable to Decode resumes (\(error))")
             }
         }
     }
@@ -48,7 +48,7 @@ class resumeService {
             let data = try encoder.encode(resumesArray)
             UserDefaults.standard.set(data, forKey: resumesKey)
         } catch {
-            print("Unable to Encode Array of Notes (\(error))")
+            print("Unable to Encode Array of resumes (\(error))")
         }
     }
 }
