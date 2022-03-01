@@ -38,7 +38,7 @@ class shareToPdfService {
         pdfData.write(toFile: "\(documentsPath)/PDFResume.pdf", atomically: true)
         drawImageOnPDF(path: "\(documentsPath)/PDFResume.pdf", resume)
         
-        return outputURL.path
+        return "\(documentsPath)/PDFResume.pdf"
     }
     
     func getDetails(_ resume: resumeObject) -> String {
