@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Githup-repo-search
+//  ResumeApp-iOS-AnyMind-Group
 //
-//  Created by Omar Diab on 4/28/22.
+//  Created by Omar Diab on 2/22/22.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ protocol resumeDelgate {
     func newResumeAdded()
 }
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, cellDelegate, resumeDelgate {
     
     @IBOutlet weak var createBtn: UIButton!
     @IBOutlet weak var resumeTableView: UITableView!
@@ -35,8 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "repoCell", for: indexPath) as! resumeTableViewCell
-//        cell.delegate = self
+        let cell = tableView.dequeueReusableCell(withIdentifier: "resumeCell", for: indexPath) as! resumeTableViewCell
+        cell.delegate = self
         cell.populateCell(resumes[indexPath.row])
         return cell
     }
@@ -47,5 +47,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         resumeTableView.reloadData()
     }
     
+    func onEditTouched(_ resume: resumeObject) {
+        let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "resumeView") as! resumeViewController
+        detailVC.operation = .EDIT
+        detailVC.resume = resume
+        detailVC.delegate = self
+        self.present(detailVC, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "create") {
+            let detailVC = segue.destination as! resumeViewController
+            detailVC.operation = .CREATE
+            detailVC.delegate = self
+        }
+    }
 }
 
