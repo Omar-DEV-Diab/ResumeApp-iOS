@@ -7,47 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07080E3527C6C5DB004968B1 /* WorkSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */; };
-		07080E3727C6C72F004968B1 /* educationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */; };
-		07080E3927C6C780004968B1 /* projectsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */; };
 		07080E3B27C8048E004968B1 /* baseDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3A27C8048E004968B1 /* baseDetailsObject.swift */; };
 		07080E3D27C804B6004968B1 /* workDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3C27C804B6004968B1 /* workDetailsObject.swift */; };
 		07080E3F27C804DF004968B1 /* educationDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E3E27C804DF004968B1 /* educationDetailsObject.swift */; };
 		07080E4127C8050E004968B1 /* projectDetailsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E4027C8050E004968B1 /* projectDetailsObject.swift */; };
 		07080E4327C8D24C004968B1 /* resumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E4227C8D24C004968B1 /* resumeService.swift */; };
-		07080E4A27CA2F13004968B1 /* shareToPdfService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07080E4927CA2F13004968B1 /* shareToPdfService.swift */; };
 		077AA8DC27C541630028A050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DB27C541630028A050 /* AppDelegate.swift */; };
 		077AA8DE27C541630028A050 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DD27C541630028A050 /* SceneDelegate.swift */; };
-		077AA8E027C541630028A050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8DF27C541630028A050 /* ViewController.swift */; };
 		077AA8E327C541640028A050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077AA8E127C541640028A050 /* Main.storyboard */; };
 		077AA8E827C541660028A050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077AA8E727C541660028A050 /* Assets.xcassets */; };
 		077AA8EB27C541660028A050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077AA8E927C541660028A050 /* LaunchScreen.storyboard */; };
 		077AA8F527C555FD0028A050 /* resumeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8F427C555FD0028A050 /* resumeTableViewCell.swift */; };
-		077AA8F727C55E980028A050 /* resumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8F627C55E980028A050 /* resumeViewController.swift */; };
 		077AA8F927C569A80028A050 /* resumeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA8F827C569A80028A050 /* resumeObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSummaryViewController.swift; sourceTree = "<group>"; };
-		07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationDetailsViewController.swift; sourceTree = "<group>"; };
-		07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectsDetailsViewController.swift; sourceTree = "<group>"; };
 		07080E3A27C8048E004968B1 /* baseDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseDetailsObject.swift; sourceTree = "<group>"; };
 		07080E3C27C804B6004968B1 /* workDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workDetailsObject.swift; sourceTree = "<group>"; };
 		07080E3E27C804DF004968B1 /* educationDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationDetailsObject.swift; sourceTree = "<group>"; };
 		07080E4027C8050E004968B1 /* projectDetailsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectDetailsObject.swift; sourceTree = "<group>"; };
 		07080E4227C8D24C004968B1 /* resumeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resumeService.swift; sourceTree = "<group>"; };
-		07080E4927CA2F13004968B1 /* shareToPdfService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shareToPdfService.swift; sourceTree = "<group>"; };
-		077AA8D827C541630028A050 /* ResumeApp-iOS-AnyMind-Group.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ResumeApp-iOS-AnyMind-Group.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		077AA8D827C541630028A050 /* Githup-repo-search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Githup-repo-search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		077AA8DB27C541630028A050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		077AA8DD27C541630028A050 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		077AA8DF27C541630028A050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		077AA8E227C541640028A050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		077AA8E727C541660028A050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		077AA8EA27C541660028A050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		077AA8EC27C541660028A050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		077AA8F427C555FD0028A050 /* resumeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resumeTableViewCell.swift; sourceTree = "<group>"; };
-		077AA8F627C55E980028A050 /* resumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resumeViewController.swift; sourceTree = "<group>"; };
 		077AA8F827C569A80028A050 /* resumeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resumeObject.swift; sourceTree = "<group>"; };
+		07A752CA281B38EA00E24E3E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,23 +61,11 @@
 			path = DetailsObjects;
 			sourceTree = "<group>";
 		};
-		07080E4527CA0C78004968B1 /* Details View controllers */ = {
-			isa = PBXGroup;
-			children = (
-				07080E3427C6C5DB004968B1 /* WorkSummaryViewController.swift */,
-				07080E3627C6C72F004968B1 /* educationDetailsViewController.swift */,
-				07080E3827C6C780004968B1 /* projectsDetailsViewController.swift */,
-			);
-			path = "Details View controllers";
-			sourceTree = "<group>";
-		};
 		07080E4627CA0CB0004968B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				077AA8DF27C541630028A050 /* ViewController.swift */,
 				077AA8F427C555FD0028A050 /* resumeTableViewCell.swift */,
-				077AA8F627C55E980028A050 /* resumeViewController.swift */,
-				07080E4527CA0C78004968B1 /* Details View controllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				07080E4227C8D24C004968B1 /* resumeService.swift */,
-				07080E4927CA2F13004968B1 /* shareToPdfService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -114,7 +90,7 @@
 		077AA8CF27C541630028A050 = {
 			isa = PBXGroup;
 			children = (
-				077AA8DA27C541630028A050 /* ResumeApp-iOS-AnyMind-Group */,
+				077AA8DA27C541630028A050 /* Githup-repo-search */,
 				077AA8D927C541630028A050 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,14 +98,15 @@
 		077AA8D927C541630028A050 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				077AA8D827C541630028A050 /* ResumeApp-iOS-AnyMind-Group.app */,
+				077AA8D827C541630028A050 /* Githup-repo-search.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		077AA8DA27C541630028A050 /* ResumeApp-iOS-AnyMind-Group */ = {
+		077AA8DA27C541630028A050 /* Githup-repo-search */ = {
 			isa = PBXGroup;
 			children = (
+				07A752CA281B38EA00E24E3E /* Info.plist */,
 				077AA8DB27C541630028A050 /* AppDelegate.swift */,
 				077AA8DD27C541630028A050 /* SceneDelegate.swift */,
 				07080E4627CA0CB0004968B1 /* Views */,
@@ -138,17 +115,16 @@
 				077AA8E127C541640028A050 /* Main.storyboard */,
 				077AA8E727C541660028A050 /* Assets.xcassets */,
 				077AA8E927C541660028A050 /* LaunchScreen.storyboard */,
-				077AA8EC27C541660028A050 /* Info.plist */,
 			);
-			path = "ResumeApp-iOS-AnyMind-Group";
+			path = "Githup-repo-search";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		077AA8D727C541630028A050 /* ResumeApp-iOS-AnyMind-Group */ = {
+		077AA8D727C541630028A050 /* Githup-repo-search */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 077AA8EF27C541660028A050 /* Build configuration list for PBXNativeTarget "ResumeApp-iOS-AnyMind-Group" */;
+			buildConfigurationList = 077AA8EF27C541660028A050 /* Build configuration list for PBXNativeTarget "Githup-repo-search" */;
 			buildPhases = (
 				077AA8D427C541630028A050 /* Sources */,
 				077AA8D527C541630028A050 /* Frameworks */,
@@ -158,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = "ResumeApp-iOS-AnyMind-Group";
+			name = "Githup-repo-search";
 			productName = "ResumeApp-iOS-AnyMind-Group";
-			productReference = 077AA8D827C541630028A050 /* ResumeApp-iOS-AnyMind-Group.app */;
+			productReference = 077AA8D827C541630028A050 /* Githup-repo-search.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 077AA8D327C541630028A050 /* Build configuration list for PBXProject "ResumeApp-iOS-AnyMind-Group" */;
+			buildConfigurationList = 077AA8D327C541630028A050 /* Build configuration list for PBXProject "Githup-repo-search" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,7 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				077AA8D727C541630028A050 /* ResumeApp-iOS-AnyMind-Group */,
+				077AA8D727C541630028A050 /* Githup-repo-search */,
 			);
 		};
 /* End PBXProject section */
@@ -214,21 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07080E3727C6C72F004968B1 /* educationDetailsViewController.swift in Sources */,
-				077AA8E027C541630028A050 /* ViewController.swift in Sources */,
 				07080E4327C8D24C004968B1 /* resumeService.swift in Sources */,
 				077AA8DC27C541630028A050 /* AppDelegate.swift in Sources */,
-				07080E3527C6C5DB004968B1 /* WorkSummaryViewController.swift in Sources */,
-				07080E4A27CA2F13004968B1 /* shareToPdfService.swift in Sources */,
 				077AA8DE27C541630028A050 /* SceneDelegate.swift in Sources */,
 				07080E3F27C804DF004968B1 /* educationDetailsObject.swift in Sources */,
 				07080E3B27C8048E004968B1 /* baseDetailsObject.swift in Sources */,
 				077AA8F927C569A80028A050 /* resumeObject.swift in Sources */,
-				07080E3927C6C780004968B1 /* projectsDetailsViewController.swift in Sources */,
 				077AA8F527C555FD0028A050 /* resumeTableViewCell.swift in Sources */,
 				07080E4127C8050E004968B1 /* projectDetailsObject.swift in Sources */,
 				07080E3D27C804B6004968B1 /* workDetailsObject.swift in Sources */,
-				077AA8F727C55E980028A050 /* resumeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7YXF235PW8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ResumeApp-iOS-AnyMind-Group/Info.plist";
+				INFOPLIST_FILE = "Githup-repo-search/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -390,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.omar.ResumeApp-iOS-AnyMind-Group";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omar.Githup-repo-search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -407,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7YXF235PW8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ResumeApp-iOS-AnyMind-Group/Info.plist";
+				INFOPLIST_FILE = "Githup-repo-search/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -418,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.omar.ResumeApp-iOS-AnyMind-Group";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omar.Githup-repo-search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -429,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		077AA8D327C541630028A050 /* Build configuration list for PBXProject "ResumeApp-iOS-AnyMind-Group" */ = {
+		077AA8D327C541630028A050 /* Build configuration list for PBXProject "Githup-repo-search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				077AA8ED27C541660028A050 /* Debug */,
@@ -438,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		077AA8EF27C541660028A050 /* Build configuration list for PBXNativeTarget "ResumeApp-iOS-AnyMind-Group" */ = {
+		077AA8EF27C541660028A050 /* Build configuration list for PBXNativeTarget "Githup-repo-search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				077AA8F027C541660028A050 /* Debug */,
